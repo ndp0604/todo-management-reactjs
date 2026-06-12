@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/dashboard.css";
 import { getDashboard } from "../services/dashboardService";
 
@@ -40,18 +41,13 @@ function Dashboard() {
         </div>
 
         <ul className="menu">
-          <li className="active">
-            📊 Dashboard
+          <li className="active">📊 Dashboard</li>
+          <li>
+            <Link to="/projects">📁 Projects</Link>
           </li>
-
-          <li>📁 Projects</li>
-
           <li>✅ Tasks</li>
-
           <li>👥 Team</li>
-
           <li>📅 Calendar</li>
-
           <li>⚙ Settings</li>
         </ul>
 
